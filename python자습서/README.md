@@ -118,7 +118,7 @@ round(3.5)  #결과는 4
 
 ### zip() 함수 
 
-*참고 : https://www.daleseo.com/python-zip/
+* 참고 : https://www.daleseo.com/python-zip/
 
 1. zip()함수는... 
 ```python
@@ -207,6 +207,16 @@ VScode를 사용하다 보면 가끔 주석 단축키 ctrl + / 가 안될 때가
 ![이미지1](단축키안될때.png)
 
 vscode 미리보기 ctrl + shift +v 
+
+
+## #2월 4일# 
+
+### \_\_name\_\_ 함수 이해하기
+
+* 참고 : https://blockdmask.tistory.com/545
+
+
+음....? ㅎㅎ
 
 <br>
 <br>
