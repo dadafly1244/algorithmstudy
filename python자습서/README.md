@@ -216,7 +216,82 @@ vscode 미리보기 ctrl + shift +v
 * 참고 : https://blockdmask.tistory.com/545
 
 
-음....? ㅎㅎ
+## 찾아본 부분
+딕셔너리를 사용하여 문자열을 format() 하는 방법 
+```python
+a_dictionary = {"country": "England", "capital": "London"}
+print("The capital of {country} is {capital}.".format(**a_dictionary))
+# The capital of England is London.
+```
+* 참고 : https://www.kite.com/python/answers/how-to-format-a-string-using-a-dictionary-in-python
+
+
+## 파일
+* 파일 읽고 쓰기 
+```python
+f = open('workfile','w')
+# r : 읽기, w: 쓰기(같은 파일 존재하는 경우 삭제됨), a : 파일 덧붙이기( 자동으로 끝에 붙음,  r+ : 파일 읽고 쓰기, 생략하면 r로 가정됨. b: 바이너리 모드 
+```
+텍스트 모드의 경우 상관이 없지만, JPEG파일이나 EXE 파일의 경우 줄 종료(window: \r\n unix : \n ) 변환에 문제가 있을 수 있으니 바이너리 모드를 사용할 것!! 
+
+```python
+with open('workfile') as f:
+     read_data = f.read()
+
+# We can check that the file has been automatically closed.
+f.closed 
+#True
+```
+with 을 사용하지 않으면 f.close()를 호출해서 파일을 닫아야함.
+
+f.readline()는 파일에서 한 줄을 읽음. 
+
+```python
+for line in f:
+    print(line, end = '')
+```
+
+
+ * 예외 처리하기 
+
+```python
+while True:
+    try: #먼저 실행 예외가 없으면  except절 실행 없이 종료!
+        x = int(input("Please enter a number: "))
+        break
+    except ValueError: 
+        print("Oops!  That was no valid number.  Try again...")
+
+```
+
+```python 
+for arg in sys.argv[1:]:
+    try:
+        f = open(arg, 'r')
+    except OSError:
+        print('cannot open', arg)
+    else:
+        print(arg, 'has', len(f.readlines()), 'lines')
+        f.close()
+```
+
+ 예외 일으키기 
+```python
+raise NameError('HiThere')
+```
+
+* 파일 열때 
+객체 잘 정리되도록 with쓰기  !! 
+```python
+with open("myfile.txt") as f:
+    for line in f:
+        print(line, end="")
+```
+
+
+
+
+
 
 <br>
 <br>
