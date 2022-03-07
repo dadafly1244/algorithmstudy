@@ -11,7 +11,7 @@ n*n 정사각형에서 (1,1)에서 출팔해서 상하좌우로 움직였을 때
 '''
 n = int(input())
 
-data  = input().split()
+data  = input().split() 
 
 x,y = 1,1
 
