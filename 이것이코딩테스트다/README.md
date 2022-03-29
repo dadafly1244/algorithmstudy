@@ -28,5 +28,14 @@ BFS 개념
 ## 3/18
 삽입정렬 개념 
 > https://jae04099.tistory.com/232
+
 > https://gmlwjd9405.github.io/2018/05/06/algorithm-insertion-sort.html
-> > https://www.daleseo.com/sort-insertion/
+
+> https://www.daleseo.com/sort-insertion/
+
+## 3/31 목 오전 10시 
+
+* 이진탐색 (binary Search)
+   개념 + 문제 부품찾기, 떡볶이 만들기 
+
+
