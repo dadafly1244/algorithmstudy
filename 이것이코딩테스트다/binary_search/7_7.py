@@ -27,3 +27,9 @@ for i in need_check:
         print('yes',end=' ')
     else:
         print('no',end=' ')
+        
+'''
+이진탐색에서 list에서 in을 안쓰고 set을 쓰는 경우 
+https://kyleyj.tistory.com/56
+
+'''

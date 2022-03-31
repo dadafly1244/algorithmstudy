@@ -17,7 +17,7 @@ data =[0]*1000001
 for i in input().split():
     data[int(i)] = 1 
 
-print(data[:40])
+#print(data[:40])
 
 #손님입력
 m = int(input())
@@ -30,4 +30,6 @@ for i in need_check:
         print('yes',end=' ')
     else:
         print('no',end =' ')
+        
+        
 

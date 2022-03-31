@@ -19,7 +19,7 @@ data.sort() #이진탐색을 쓰기 위해서 정렬해야함!!
 m = int(input())
 need_check = list(map(int, input().split()))
 
-need_check.sort()
+# need_check.sort() 이거 들어가면 순서 틀릴 수 있음 !! 
 
 
 def binary_search(array, target, start, end):
