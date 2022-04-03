@@ -1,3 +1,10 @@
+'''
+input()으로 받으니까 시간초과가 났다!! 
+import sys 해서 받아야함!! 
+
+'''
+
+
 import sys
 f = sys.stdin.readline
 n, c = map(int, f().split())
