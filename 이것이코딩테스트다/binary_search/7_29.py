@@ -23,7 +23,7 @@ while(start <= end):
     value = house[0]
     count =1
     #현재 mid 값을 이용해 공유기를 설치하기 
-    for i in range(1,n):
+    for i in range(1,n): 
         if house[i] >= value + mid:
             value = house[i]
             count += 1 
