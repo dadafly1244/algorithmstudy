@@ -15,4 +15,6 @@ if num != 0:
   
 print(''.join(strstr)) #배열을 문자열로 변환하는거!! 문자열사이에 /를 넣고 싶으면 '/'.join(strstr)
     
+    
+# ord("1")<=ord(i)<=ord("9") 
   
